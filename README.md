@@ -1,5 +1,8 @@
 # 🔐 Microsoft Hybrid AD + Microsoft XDR + Sentinel Detection Lab
 
+![Status](https://img.shields.io/badge/status-completed-brightgreen)
+![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Azure-lightgrey)
+
 ## 📌 Overview
 
 This project demonstrates a hybrid identity and security monitoring setup using:
@@ -21,13 +24,19 @@ This project demonstrates a hybrid identity and security monitoring setup using:
 
 ## 🏗️ Architecture
 
-![Hybrid Lab Architecture](Architecture/hybrid_architecture_diagram.png)
+![Hybrid Lab Architecture](Architecture/ProjectArchitecture.jpeg)
 
 ## ⚙️ Configuration Steps
 
-- ✅ Azure AD Connect Setup: [`Configurations/ad_connect_config.md`](Configurations/ad_connect_config.md)
-- ✅ Microsoft Defender for Endpoint Onboarding: [`Configurations/defender_onboarding.md`](Configurations/defender_onboarding.md)
-- ✅ Sentinel Rule Creation & Alerting: [`Configurations/sentinel_rules_alerts.md`](Configurations/sentinel_rules_alerts.md)
+### ✅ Azure AD Connect Setup
+
+![OnpremAD](Screenshots/OnpremAD.png)  
+![EntraID](Screenshots/Entraconnect.png)
+
+### ✅ Microsoft Defender for Endpoint Onboarding
+
+![MicrosoftXDR](Screenshots/MicrosoftXDRalldevices.png)  
+![XDROverview](Screenshots/MicrosoftDefenderDeviceInventory.png)
 
 ## 🧪 Attack Simulation
 
@@ -35,9 +44,41 @@ This project demonstrates a hybrid identity and security monitoring setup using:
 - Alert triggered in Microsoft Defender XDR
 - Logs visible in Sentinel
 
-📸 Screenshots:
-- Defender XDR Alert: ![](Screenshots/xdr_alert.png)
-- Sentinel Incident: ![](Screenshots/sentinel_incident.png)
+### 📸 Defender XDR Alert on Domain Controller
+
+- Alert Overview:  
+  ![DCOverview](Screenshots/nishantechdcoverviewinxdr.png)
+
+- Mimikatz Detected:  
+  ![DCMimikatzDetected](Screenshots/dcmimikatzexecutedetected.png)
+
+- Execution Timeline:  
+  ![DCMimikatzexecution](Screenshots/dcmimikatzexecutiondetected.png)
+
+- Process Tree:  
+  ![DCmimikatzProcessTree](Screenshots/dcmimikatzprocesstree.png)
+
+### 📸 Defender XDR Alert on Workstation WS02
+
+- Alert Overview:  
+  ![WS02Overview](Screenshots/WS02Overview.png)
+
+- Mimikatz Detected:  
+  ![WS02Mimikatzdetected](Screenshots/WS02mimikatzdetected.png)
+
+- Threat Details:  
+  ![WS02Mimikatzdetails](Screenshots/WS02mimikatzmalwaredetected.png)
+
+### 📸 Sentinel Logs and Dashboard
+
+- Mimikatz Logs in Sentinel:  
+  ![Sentinel Mimikatz Logs](Screenshots/SentinelMimikatz.png)
+
+- MDATP Logs in Sentinel:  
+  ![Sentinel MDATP Logs](Screenshots/SentinelMDATP.png)
+
+- Sentinel SOC Dashboard:  
+  ![Dashboard](Screenshots/SOCdashboard.png)
 
 ## 🧠 Learning Outcomes
 
@@ -62,5 +103,5 @@ This project demonstrates a hybrid identity and security monitoring setup using:
 ## 🧵 Project Author
 
 **Nishan Rajmulik**  
-Cybersecurity Enthusiast | Blue Team Focus | [LinkedIn](https://www.linkedin.com/in/nishanrajmulik)
-
+Cybersecurity Enthusiast | Blue Team Focus  
+[LinkedIn](https://www.linkedin.com/in/nishanrajmulik)
