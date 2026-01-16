@@ -112,4 +112,4 @@ This project strengthened my understanding of hybrid Active Directory environmen
 
 **Nishan Rajmulik**  
 Cybersecurity Enthusiast | Blue Team Focus  
-[LinkedIn](https://www.linkedin.com/in/najmulik)
+[LinkedIn](https://www.linkedin.com/in/nrajmulik)
