@@ -5,6 +5,10 @@
 
 ## 📌 Overview
 
+## Educational Context
+
+This project was completed as part of my Cybersecurity studies and as part of my independent professional development. It focuses on hybrid identity security, cloud-based threat detection, and the Security Operations Centre (SOC) monitoring using Microsoft security technologies.
+
 This project demonstrates a hybrid identity and security monitoring setup using:
 
 - 🧠 **Azure AD Connect** (Hybrid AD join)
@@ -99,6 +103,10 @@ This project demonstrates a hybrid identity and security monitoring setup using:
 | Mimikatz | Attack simulation |
 
 ---
+
+## Reflection
+
+This project strengthened my understanding of hybrid Active Directory environments and cloud-based security monitoring. I learned how identity, endpoint detection, and SIEM platforms integrate to provide effective detection and response. This experience supports my career goal of working in a SOC or cloud security role.
 
 ## 🧵 Project Author
 
